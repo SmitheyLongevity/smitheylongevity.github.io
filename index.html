@@ -146,7 +146,7 @@
   .proof .badge{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.04em;color:var(--accent);background:rgba(30,77,60,.09);padding:.4em .9em;border-radius:100px;margin-bottom:18px}
   .proof h2{font-size:clamp(1.8rem,3.4vw,2.5rem);max-width:20ch}
   .proof .sub{color:var(--ink-soft);margin-top:16px;max-width:52ch}
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:46px}
+  .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:46px}
   .stat{border-top:2px solid var(--accent);padding-top:18px}
   .stat .big{font-family:'Fraunces',serif;font-size:clamp(2rem,4vw,2.9rem);font-weight:600;line-height:1;letter-spacing:-.02em}
   .stat .lab{font-size:.92rem;color:var(--ink-soft);margin-top:10px}
@@ -195,6 +195,7 @@
     .hero-photo{aspect-ratio:4/3}
     .cards{grid-template-columns:1fr}
     .stats{grid-template-columns:repeat(2,1fr)}
+    .stats .stat:last-child{grid-column:1 / -1}
     .proof-top{grid-template-columns:1fr;gap:28px}
     .proof-photo{max-width:300px;margin:0 auto}
     .problem,.proof{padding:44px 28px}
@@ -242,7 +243,7 @@
     <div class="problem reveal">
       <div class="kicker">The problem</div>
       <h2>The people who push the hardest tend to <em>break the quietest.</em></h2>
-      <p>You optimize everything else — roadmaps, metrics, headcount, launches. But the system running all of it, you, might only get a once-a-year check up. Your wearables might flash a poor number. Root cause, solutions, and next steps are unclear. Burnout doesn't show up until it's already a problem. We help build systems to manage your body and mind autonomously at an elite level.</p>
+      <p>You optimize everything else — roadmaps, metrics, headcount, launches. But the system running all of it — you — might only get a once-a-year checkup. A wearable flashes a bad number, but the root cause, the fix, and the next step stay unclear. Burnout doesn't announce itself until it's already a problem. We build the system that manages your body and mind with the same rigor you bring to everything else.</p>
     </div>
   </div>
 </section>
@@ -256,13 +257,13 @@
     <div class="cards">
       <div class="card reveal">
         <div class="num">01</div>
-        <h3>Wearable data, decoded</h3>
-        <p>I pull the signal out of your Oura, Whoop, Garmin, or Apple Watch — across devices — and translate noisy metrics into the two or three that actually predict how you'll feel and perform.</p>
+        <h3>Wearables deep dives</h3>
+        <p>We aggregate your biometrics across wearable rings, watches, and lab results to identify your baseline strengths and opportunities.</p>
       </div>
       <div class="card reveal">
         <div class="num">02</div>
         <h3>Data Driven Reviews</h3>
-        <p>Structured WBR / MBR / QBR metric reviews, in the Amazon format you already trust — applied to your sleep, recovery, and energy instead of your P&amp;L.</p>
+        <p>Structured WBR / MBR / QBR metric reviews, in the operating format you already trust — applied to your sleep, recovery, and exercise instead of your P&amp;L.</p>
       </div>
       <div class="card reveal">
         <div class="num">03</div>
@@ -299,6 +300,11 @@
           <div class="tag">Elite for age 35–44</div>
         </div>
         <div class="stat">
+          <div class="big">80.4</div>
+          <div class="lab">Grip strength — kg, dominant hand</div>
+          <div class="tag">Elite for age &amp; sex</div>
+        </div>
+        <div class="stat">
           <div class="big">85.7</div>
           <div class="lab">HRV — RMSSD, 90-day avg (ms)</div>
           <div class="tag">92nd percentile</div>
@@ -309,7 +315,7 @@
           <div class="tag">Verified · among longevity testers</div>
         </div>
       </div>
-      <p style="font-size:.86rem;color:var(--ink-faint);margin-top:24px">Measured via TruDiagnostic (DunedinPACE), lab CPET (VO₂ max), and Oura (HRV). Wearable and lab figures carry device-specific error bands; trends are reliable, absolute numbers are lab-anchored where possible.</p>
+      <p style="font-size:.86rem;color:var(--ink-faint);margin-top:24px">Measured via TruDiagnostic (DunedinPACE), lab CPET (VO₂ max), Oura (HRV), and a Camry electronic dynamometer (grip strength — seated, elbow at 90°, 90-day average). The VO₂ test was terminated early on equipment failure at submaximal effort, so 57.9 is a floor, not a ceiling. Wearable and lab figures carry device-specific error bands; trends are reliable, absolute numbers are lab-anchored where possible.</p>
     </div>
   </div>
 </section>
