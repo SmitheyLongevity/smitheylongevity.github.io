@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Client Intake — Smithey Longevity Group</title>
+<style>
+  :root{ --green:#1E4D3C; --rust:#B05A2E; --ink:#18170F; --grey:#54513F; --cream:#F6F2E9; }
+  html,body{height:100%;margin:0;}
+  body{ background:var(--cream); color:var(--ink); display:flex; align-items:center; justify-content:center;
+        font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  .card{ max-width:440px; text-align:center; padding:40px 28px; }
+  .brand{ color:var(--rust); font-weight:700; letter-spacing:.04em; font-size:13px; text-transform:uppercase; margin-bottom:10px; }
+  h1{ color:var(--green); font-size:26px; margin:0 0 12px; }
+  p{ color:var(--grey); font-size:16px; line-height:1.6; margin:0 0 22px; }
+  a.btn{ display:inline-block; background:var(--green); color:#fff; text-decoration:none;
+         padding:12px 22px; border-radius:8px; font-weight:600; font-size:15px; }
+  a.btn:hover{ background:#163b2e; }
+</style>
+<script>
+  // ---- Paste your Google Form SHARE link between the quotes below (the only thing to edit) ----
+  var FORM_URL = "https://forms.gle/nkZuw21F6PxSKnqt6";
+  window.addEventListener('DOMContentLoaded', function () {
+    var link = document.getElementById('go');
+    if (link) link.href = FORM_URL;
+    // brief pause so the page is seen, then redirect
+    setTimeout(function () { window.location.replace(FORM_URL); }, 900);
+  });
+</script>
+</head>
+<body>
+  <div class="card">
+    <div class="brand">Smithey Longevity Group</div>
+    <h1>Your intake</h1>
+    <p>Taking you to your private, secure intake form. It only takes a few minutes.</p>
+    <a id="go" class="btn" href="https://forms.gle/nkZuw21F6PxSKnqt6">Continue to the form</a>
+  </div>
+</body>
+</html>
